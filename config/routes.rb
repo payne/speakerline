@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :speakers
   resources :proposals,       only: [:new, :create, :show, :edit, :update]
-  resources :submissions,     only: [:new, :create]
+  resources :submissions,     only: [:new, :create, :edit]
   resources :events,          only: [:index, :show]
   resources :event_instances, only: [:new, :create, :show]
 end
